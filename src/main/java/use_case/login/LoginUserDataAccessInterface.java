@@ -27,4 +27,11 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * Sets the currently logged-in user's name.
+     * This method should be called after a successful login to record which user is active.
+     *
+     * @param name the username of the user who has just logged in
+     */
+    void setCurrentUser(String name);
 }
